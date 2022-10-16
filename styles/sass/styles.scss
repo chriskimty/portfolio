@@ -1,0 +1,17 @@
+// FOUNDATION
+@use "partials/setup";
+@use "partials/variables" as *;
+@use "partials/typography";
+@use "partials/baseStyles";
+
+// SECTIONS
+@use "partials/header";
+@use "partials/main";
+@use "partials/footer";
+
+
+// MEDIA QUERIES
+@use "partials/mediaQueries";
+
+
+
