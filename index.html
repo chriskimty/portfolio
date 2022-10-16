@@ -12,10 +12,269 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <!-- FONTAWESOME ICONS-->
     <script src="https://kit.fontawesome.com/542d40d4ae.js" crossorigin="anonymous"></script>
+    <!-- DEVICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- look into creating a SKIPLINK -->
 </head>
 
 <body>
+    <!-- NAVIGATION BAR -->
+    <nav class="headerNav">
+        <div class="wrapper">
+            <!--MAIN/DESKTOP NAV -->
+            <div class="mainNav">
+                <div class="logo">
+                    <a href="#home">chrisKim</a>
+                </div>
+                <ul class="mainNavLinks">
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li class="highlight"><a href="#contact">contact</a></li>
+                </ul>
+            </div> <!-- .mainNav ends -->
+            <!-- HAMBURGER MENU (**have not included yet) -->
+            <!-- MOBILE NAV BAR -->
+            <div class="mobileNav">
+                <ul class="mobileNavLinks">
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div> <!-- .mobileNav ends -->
+        </div> <!-- .wrapper ends -->
+    </nav> <!-- .headerNav ends -->
 
+    <!-- HEADER -->
+    <header>
+        <!-- consider adding light/dark mode: https://www.youtube.com/watch?v=9LZGB3OLXNQ but also need to consider how to execute this in mobile! what/how to consider accessibility here? -->
+        <div class="textContainer">
+            <h1>Chris Taeyoung Kim</h1>
+            <h2>Frontend Web Developer & <span class="typewriter">Musician.</span></h2>
+            <!-- add an animated typewriter effect with CSS + JS later on  -->
+            <!-- ^what to do about accessibility here? -->
+        </div><!-- .textContainer ends -->
+        <div class="linkContainer">
+            <a href="#projects" class="button">projects</a>
+            <a href="./assets/resumeTemp.pdf" class="button">resume</a>
+        </div><!-- .linkContainer ends -->
+        <div class="arrow">
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- SOCIALS NAV (Sticky) -->
+        <nav class="socialsNav" aria-label="socials links">
+            <ul class="socials">
+                <li>
+                    <a href="https://github.com/chriskimty" target="_blank" aria-label="Chris Kim's GitHub Repo">
+                        <i class="fa-brands fa-github fa-fw"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/chris-ty-kim/" target="_blank"
+                        aria-label="Chris Kim's LinkedIn Page">
+                        <i class="fa-brands fa-linkedin fa-fw"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:christaeyoung.kim@gmail.com" target="_blank" aria-label="Send Chris Kim an email">
+                        <i class="fa-solid fa-envelope fa-fw"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://calendly.com/christaeyoung-kim/meeting" target="_blank"
+                        aria-label="Book a meeting with Chris Kim on calendly">
+                        <i class="fa-solid fa-calendar fa-fw"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Section: ABOUT -->
+        <section class="about" id="about">
+            <div class="wrapper">
+                <h3>about me.</h3>
+                <div class="aboutContainer">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, nobis nemo adipisci accusantium
+                        deleniti incidunt ipsum natus velit ad, maiores deserunt nam aut suscipit vel temporibus facere
+                        obcaecati provident illo.</p>
+                    <img src="./assets/aboutTempImg.png" alt="temporary drawn picture of Chris and her cat">
+                </div><!-- .aboutContainer ends -->
+            </div> <!-- .wrapper ends -->
+        </section>
+
+        <!-- Section: SKILLS -->
+        <section class="skills" id="skills">
+            <div class="wrapper skillsContainer">
+                <ul class="skillsList">
+                    <li>
+                        <i class="fab fa-html5"></i>
+                        <p>HTML5</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS3</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-sass"></i>
+                        <p>SASS</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-js"></i>
+                        <p>JavaScript</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-react"></i>
+                        <p>React</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-cogs"></i>
+                        <p>REST APIs</p>
+                    </li>
+                    <li>
+                        <i class="devicon-git-plain"></i>
+                        <p>Git</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-github"></i>
+                        <p>GitHub</p>
+                    </li>
+                    <li>
+                        <i class="devicon-firebase-plain"></i>
+                        <p>Firebase</p>
+                    </li>
+                    <li>
+                        <i class="devicon-trello-plain"></i>
+                        <p>Trello</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-mobile-alt"></i>
+                        <p>Responsive Design</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-universal-access"></i>
+                        <p>Accessibility</p>
+                    </li>
+                </ul>
+            </div><!-- .wrapper .skillsContainer ends -->
+        </section>
+
+        <!-- Section: PROJECTS -->
+        <section class="projects" id="projects">
+            <div class="wrapper">
+                <h3>projects.</h3>
+                <div class="allProjectsContainer">
+                    <div class="projectContainer projectOne">
+                        <div class="mockUpContainer">
+                            <img src="https://placekitten.com/300/300" alt="mockup"> <!-- needs to be revised -->
+                        </div><!-- .mockUpContainer ends -->
+                        <div class="projectText">
+                            <h4>Title of Project</h4>
+                            <h5>[TOOLS/TOOLS/TOOLS]</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, unde molestias quam
+                                consequatur aperiam dolore quasi eveniet sequi sed accusantium, quos nam voluptatem
+                                ullam quaerat?</p>
+                        </div><!-- .projectText ends -->
+                        <div class="projectLinks">
+                            <a href="#ADDLIVELINK" class="button">live</a>
+                            <a href="#ADDREPOLINK" class="button">repo</a>
+                        </div><!-- .projectLinks ends -->
+                    </div> <!-- .projectContainer .projectOne ends -->
+                    <div class="projectContainer projectTwo">
+                        <div class="mockUpContainer">
+                            <img src="https://placekitten.com/300/300" alt="mockup"> <!-- needs to be revised -->
+                        </div><!-- .mockUpContainer ends -->
+                        <div class="projectText">
+                            <h4>Title of Project</h4>
+                            <h5>[TOOLS/TOOLS/TOOLS]</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, unde molestias quam
+                                consequatur aperiam dolore quasi eveniet sequi sed accusantium, quos nam voluptatem
+                                ullam quaerat?</p>
+                        </div><!-- .projectText ends -->
+                        <div class="projectLinks">
+                            <a href="#ADDLIVELINK" class="button">live</a>
+                            <a href="#ADDREPOLINK" class="button">repo</a>
+                        </div><!-- .projectLinks ends -->
+                    </div> <!-- .projectContainer .projectTwo ends -->
+                    <div class="projectContainer projectThree">
+                        <div class="mockUpContainer">
+                            <img src="https://placekitten.com/300/300" alt="mockup"> <!-- needs to be revised -->
+                        </div><!-- .mockUpContainer ends -->
+                        <div class="projectText">
+                            <h4>Title of Project</h4>
+                            <h5>[TOOLS/TOOLS/TOOLS]</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, unde molestias quam
+                                consequatur aperiam dolore quasi eveniet sequi sed accusantium, quos nam voluptatem
+                                ullam quaerat?</p>
+                        </div><!-- .projectText ends -->
+                        <div class="projectLinks">
+                            <a href="#ADDLIVELINK" class="button">live</a>
+                            <a href="#ADDREPOLINK" class="button">repo</a>
+                        </div><!-- .projectLinks ends -->
+                    </div> <!-- .projectContainer .projectThree ends -->
+                    <div class="projectContainer projectFour">
+                        <div class="mockUpContainer">
+                            <img src="https://placekitten.com/300/300" alt="mockup"> <!-- needs to be revised -->
+                        </div><!-- .mockUpContainer ends -->
+                        <div class="projectText">
+                            <h4>Title of Project</h4>
+                            <h5>[TOOLS/TOOLS/TOOLS]</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, unde molestias quam
+                                consequatur aperiam dolore quasi eveniet sequi sed accusantium, quos nam voluptatem
+                                ullam quaerat?</p>
+                        </div><!-- .projectText ends -->
+                        <div class="projectLinks">
+                            <a href="#ADDLIVELINK" class="button">live</a>
+                            <a href="#ADDREPOLINK" class="button">repo</a>
+                        </div><!-- .projectLinks ends -->
+                    </div> <!-- .projectContainer .projectFour ends -->
+                </div> <!-- .allProjectsContainer ends -->
+            </div><!-- .wrapper ends -->
+        </section>
+
+        <!-- Section: CONTACT -->
+        <section class="contact" id="contact">
+            <div class="wrapper">
+                <h3>contact me!</h3>
+
+                <div class="contactForm">
+                    <p>a short little message telling u to contact me</p>
+
+                    <form action="#" method="#" class="myForm" name="myForm">
+                        <!-- needs revision for functionality-->
+                        <label for="name">name</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">email</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message" class="visuallyHidden">message</label>
+                        <textarea name="message" id="message" cols="40" rows="10" required></textarea>
+
+                        <button id="submitButton" type="submit" class="button">submit</button>
+                    </form>
+                </div><!-- .contactForm ends -->
+            </div><!-- .wrapper ends -->
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- Return to Top -->
+        <div class="return">
+            <a href="#home">
+                <p>back to top<i class="fa-solid fa-circle-chevron-up"></i></p>
+            </a>
+        </div><!-- .return ends -->
+        <div class="copyright">
+            <p>Copyright &#169 Chris Taeyoung Kim 2022</p>
+        </div>
+
+    </footer>
     <script src="./script.js"></script>
 </body>
 
