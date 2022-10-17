@@ -1,1 +1,13 @@
 @use "variables" as *;
+
+footer {
+    .copyright {
+        background-color: $black;
+        color: $white;
+        padding: 10px 0px;
+        text-align: center;
+        p {
+            margin: 0 auto;
+        }
+    }
+}

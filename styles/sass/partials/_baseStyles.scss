@@ -13,22 +13,30 @@ img {
     padding: 0;
 }
 
-// .button {
-//     padding: 18px 36px;
-//     font-size: 1rem;
-//     line-height: 32px;
-//     letter-spacing: 1px;
-//     text-align: center;
-//     cursor: pointer;
-//     transition: 0.3s;
-//     border-radius: 0.25em;
-//     &:hover {
-//         background-color: #e5007ab4;
-//     }
-//      &:focus {
-//         background-color: #e5007ab4;
-//     }
-// }
+a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button {
+    background-color: $black;
+    color: $white;
+    border: 2px solid $black;
+    padding: 14px 36px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0.25em;
+    &:hover {
+        background-color: transparent;
+        color: $black;
+    }
+     &:focus {
+        background-color: transparent;
+        color: $black;
+    }
+}
 
 ul {
     list-style: none;

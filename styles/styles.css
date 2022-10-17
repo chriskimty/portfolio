@@ -230,6 +230,51 @@ html {
   font-size: 125%;
 }
 
+body {
+  font-family: "Inconsolata", monospace;
+  color: #1c1c1c;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Karla", sans-serif;
+}
+
+h1 {
+  font-size: 5.5rem;
+  line-height: 150px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 60px;
+  letter-spacing: 3.9px;
+}
+
+h3 {
+  font-size: 4rem;
+  letter-spacing: 5px;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 25px;
+}
+
+h5 {
+  font-size: 1rem;
+  letter-spacing: 1.6px;
+}
+
+a {
+  color: #1c1c1c;
+  font-size: 1.2rem;
+}
+
+p {
+  line-height: 32px;
+  letter-spacing: 1.6px;
+}
+
 .wrapper {
   max-width: 1728px;
   width: 85%;
@@ -243,6 +288,203 @@ img {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button {
+  background-color: #1c1c1c;
+  color: #F9FAFA;
+  border: 2px solid #1c1c1c;
+  padding: 14px 36px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 0.25em;
+}
+.button:hover {
+  background-color: transparent;
+  color: #1c1c1c;
+}
+.button:focus {
+  background-color: transparent;
+  color: #1c1c1c;
+}
+
 ul {
   list-style: none;
+}
+
+.logo {
+  -webkit-animation: bounceIn 0.8s;
+          animation: bounceIn 0.8s;
+  -webkit-transform: rotate(0deg) scale(1) translateZ(0);
+          transform: rotate(0deg) scale(1) translateZ(0);
+  -webkit-transition: all 0.4s cubic-bezier(0.8, 1.8, 0.75, 0.75);
+  transition: all 0.4s cubic-bezier(0.8, 1.8, 0.75, 0.75);
+}
+.logo a {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.logo a:hover {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+@-webkit-keyframes bounceIn {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.headerNav {
+  background-color: #F9FAFA;
+  border: 0.5px solid #F9FAFA;
+  margin: 20px 0px;
+}
+
+.mainNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mainNav .mainNavLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.mainNav .mainNavLinks li {
+  margin-left: 20px;
+}
+.mainNav .mainNavLinks a {
+  padding: 14px 36px;
+  text-align: center;
+  border-radius: 0.25em;
+  border: 2px solid transparent;
+}
+.mainNav .mainNavLinks a:hover {
+  border: 2px solid #1c1c1c;
+  font-weight: bold;
+}
+
+.mobileNav {
+  display: none;
+}
+
+header {
+  background-color: #d9dbf1;
+  height: max(88vh, 800px);
+}
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+header .wrapper .textContainer, header .wrapper .linkContainer, header .wrapper .arrow {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+header .wrapper .linkContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+}
+header .wrapper .linkContainer a {
+  margin: 0 10px;
+}
+
+.arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px;
+}
+.arrow a:hover {
+  color: #FF0096;
+}
+
+.textContainer {
+  margin: 90px 0;
+}
+.textContainer h2 span {
+  display: block;
+}
+.textContainer h2 span::before {
+  content: attr(data-text);
+}
+
+.catContainer {
+  display: none;
+}
+
+footer .copyright {
+  background-color: #1c1c1c;
+  color: #F9FAFA;
+  padding: 10px 0px;
+  text-align: center;
+}
+footer .copyright p {
+  margin: 0 auto;
 }

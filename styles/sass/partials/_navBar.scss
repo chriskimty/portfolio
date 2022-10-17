@@ -1,1 +1,76 @@
 @use "variables" as *;
+.logo { 
+    animation: bounceIn 0.8s;
+    transform: rotate(0deg) scale(1) translateZ(0);
+    transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+    a {
+        transition: 0.7s;
+        &:hover {
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        }
+    }
+    
+    @keyframes bounceIn {
+        0% {
+            opacity: 1;
+            transform: scale(.3);
+        } 
+
+        50% {
+            opacity: 1;
+            transform: scale(1.05);
+        } 
+
+        70% {
+            opacity: 1;
+            transform: scale(.9);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
+
+.headerNav {
+    background-color: $white;
+    border: 0.5px solid $white;
+    margin: 20px 0px;
+}
+
+.mainNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .mainNavLinks {
+        display: flex;
+        justify-content: space-between;
+        li {
+            margin-left: 20px;
+        }
+        a {
+            padding: 14px 36px;
+            text-align: center;
+            border-radius: 0.25em;
+            border: 2px solid transparent;
+            &:hover {
+                border: 2px solid $black;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+// temporarily display: none .mobileNav (come back to this to bring back w/ JS. will probably have to remove off screen with positioning. 
+.mobileNav {
+    display: none;
+}
