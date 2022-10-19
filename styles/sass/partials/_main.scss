@@ -1,1 +1,201 @@
 @use "variables" as *;
+
+// Socials/Contact Side Nav
+.socialsNav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    right: 2%;
+    bottom: 50px;
+    .socials {
+        background-color: $black;
+        padding-left: 0;
+        border-radius: 0.25em;
+        li {
+            margin: 12px;
+          a {
+            color: $white;
+                &:hover {
+                    color: $darkBlue;
+                }
+                &:focus {
+                    color: $darkBlue;
+                }
+            }
+        }  
+    }        
+}
+
+// Section: About Me
+// is this section TOO plain? if so, could potentially have shorter vh.
+.about {
+    height: max(100vh, 900px);
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        .aboutContainer {
+            display: flex;
+            align-items: center;
+            
+            p {
+                width: 55%;
+            }
+            .aboutImgContainer {
+                width: 45%;
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 70%;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+// Section: Skills
+.skills {
+    height: max(100vh, 900px);
+    background-color: $grayBlue;
+    h3 {
+        padding-top: 80px;
+    }
+}
+
+.skillsList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 60px 0px 60px;
+    li {
+        width: 25%;
+        margin-bottom: 20px;
+        text-align: center;
+        transition: 0.3s;
+        &:hover {
+            opacity: 0.7;
+            background-image: url(../assets/checkmark.png);
+            background-repeat: no-repeat;
+            background-position: 55% 70%;
+        }
+        i {
+            font-size: 4rem;
+        }
+    }
+}
+
+// Section: Projects
+.projects {
+    // does height need to be defined? 
+    background-color: $white;
+}
+
+.allProjectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    .projectContainer {
+        display: flex;
+        text-align: center;
+        margin-bottom: 50px;
+        .mockUpContainer {
+            width: 50%;
+        }
+        .projectContentContainer {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid $black;
+            border-radius: 2em;
+            .projectText {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }  
+        } 
+    }
+}
+
+.projectTwo, .projectFour {
+    flex-direction: row-reverse;
+}
+
+.projectText {
+    h4 {
+        margin: 20px 0 0 0;
+    }
+    h5 {
+        margin-bottom: 0px;
+    }
+    p {
+        font-size: 1.1rem;
+        line-height: 30px;
+        margin: 22px 15px 5px 15px;
+    }
+}
+
+.projectLinks {
+    margin: 30px;
+}
+
+// Section: Contact
+.contact {
+    background-color: $grayBlue;
+    h3 {
+        padding-top: 80px;
+        margin-bottom: 20px;
+    }
+}
+
+.contactForm {
+    height: max(80vh, 750px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    form {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.3rem;
+        letter-spacing: 3.5px;
+        font-weight: bold;
+        width: 70%;
+        input, textarea {
+            border: none;
+            font-family: $bodyFont;
+            font-size: 1rem;
+            padding: 10px 5px;
+            margin-bottom: 15px;
+                &:focus {
+                outline: 3px solid $lightGray;
+            }
+        }
+        button {
+            width: 30%;
+            align-self: center;
+            margin-top: 20px;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+.return {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    a {
+        transition: 0.3s;
+        &:hover {
+            color: $darkBlue;
+        }
+        i {
+        font-size: 2.5rem;
+        }
+    }
+    p {
+        margin: 5px;
+    }
+}
+   
