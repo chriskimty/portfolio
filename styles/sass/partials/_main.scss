@@ -30,6 +30,7 @@
 // is this section TOO plain? if so, could potentially have shorter vh.
 .about {
     height: max(100vh, 900px);
+    background-color: $white;
     .wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -87,6 +88,10 @@
 .projects {
     // does height need to be defined? 
     background-color: $white;
+    h3 {
+        margin-top: 0px;
+        padding-top: 80px;
+    }
 }
 
 .allProjectsContainer {
@@ -97,20 +102,27 @@
     .projectContainer {
         display: flex;
         text-align: center;
+        align-items: center;
         margin-bottom: 50px;
         .mockUpContainer {
             width: 50%;
+            margin: 50px;
         }
         .projectContentContainer {
             width: 50%;
             display: flex;
             flex-direction: column;
+            margin: 50px;
             border: 2px solid $black;
             border-radius: 2em;
             .projectText {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
+                margin-top: 10%;
+                h4 {
+                    width: 100%; 
+                }
             }  
         } 
     }
@@ -135,7 +147,7 @@
 }
 
 .projectLinks {
-    margin: 30px;
+    margin: 10% 10% 13% 10%;
 }
 
 // Section: Contact
@@ -153,6 +165,10 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    p {
+        width:70%;
+        text-align: center;
+    }
     form {
         display: flex;
         flex-direction: column;

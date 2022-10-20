@@ -1,1 +1,14 @@
 @use "variables" as *;
+
+@media (max-width: 800px) {
+    .headerNav {
+        padding: 0px;
+    }
+    .mainNav {
+        display: none; 
+    }
+    .hamNavIcon {
+        display: block;
+    }
+
+}

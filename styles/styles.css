@@ -256,8 +256,9 @@ h3 {
 }
 
 h4 {
-  font-size: 2rem;
-  line-height: 25px;
+  font-size: 2.5rem;
+  line-height: 35px;
+  letter-spacing: 2.5px;
 }
 
 h5 {
@@ -383,7 +384,7 @@ ul {
 }
 
 .headerNav {
-  background-color: #F9FAFA;
+  background-color: #d9dbf1;
   padding: 20px 0px;
 }
 
@@ -420,8 +421,77 @@ ul {
   font-weight: bold;
 }
 
-.mobileNav {
+.hamNavIcon {
   display: none;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  z-index: 100;
+  font-size: 2rem;
+}
+.hamNavIcon .toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.hamNavIcon .toggle:hover {
+  color: #6975f9;
+}
+.hamNavIcon .toggle:focus {
+  color: #6975f9;
+}
+
+.hamNav {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  background-color: rgba(249, 250, 250, 0.7843137255);
+  height: 100vh;
+  width: 80vw;
+  position: fixed;
+  top: 0;
+  right: -80vw;
+  z-index: 10;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.hamNav ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 50px;
+}
+.hamNav ul li {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+}
+.hamNav ul li a {
+  font-size: 2.8rem;
+  line-height: 85px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.hamNav ul li a:hover {
+  color: #6975f9;
+  font-weight: bold;
+}
+.hamNav ul li a:focus {
+  color: #6975f9;
+  font-weight: bold;
+}
+.hamNav.openNav {
+  height: 100%;
+  -webkit-transform: translateX(-80vw);
+          transform: translateX(-80vw);
 }
 
 header {
@@ -517,6 +587,7 @@ header .wrapper .linkContainer a {
 
 .about {
   height: max(100vh, 900px);
+  background-color: #F9FAFA;
 }
 .about .wrapper {
   display: -webkit-box;
@@ -586,6 +657,10 @@ header .wrapper .linkContainer a {
 .projects {
   background-color: #F9FAFA;
 }
+.projects h3 {
+  margin-top: 0px;
+  padding-top: 80px;
+}
 
 .allProjectsContainer {
   display: -webkit-box;
@@ -601,10 +676,14 @@ header .wrapper .linkContainer a {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 50px;
 }
 .allProjectsContainer .projectContainer .mockUpContainer {
   width: 50%;
+  margin: 50px;
 }
 .allProjectsContainer .projectContainer .projectContentContainer {
   width: 50%;
@@ -615,6 +694,7 @@ header .wrapper .linkContainer a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 50px;
   border: 2px solid #1c1c1c;
   border-radius: 2em;
 }
@@ -627,6 +707,10 @@ header .wrapper .linkContainer a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 10%;
+}
+.allProjectsContainer .projectContainer .projectContentContainer .projectText h4 {
+  width: 100%;
 }
 
 .projectTwo, .projectFour {
@@ -649,7 +733,7 @@ header .wrapper .linkContainer a {
 }
 
 .projectLinks {
-  margin: 30px;
+  margin: 10% 10% 13% 10%;
 }
 
 .contact {
@@ -671,6 +755,10 @@ header .wrapper .linkContainer a {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+}
+.contactForm p {
+  width: 70%;
+  text-align: center;
 }
 .contactForm form {
   display: -webkit-box;
@@ -739,4 +827,16 @@ footer .copyright {
 }
 footer .copyright p {
   margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .headerNav {
+    padding: 0px;
+  }
+  .mainNav {
+    display: none;
+  }
+  .hamNavIcon {
+    display: block;
+  }
 }
