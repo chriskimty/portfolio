@@ -384,8 +384,11 @@ ul {
 }
 
 .headerNav {
-  background-color: #d9dbf1;
-  padding: 20px 0px;
+  background-color: rgba(217, 219, 241, 0.8235294118);
+  padding: 10px 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .mainNav {
@@ -488,6 +491,12 @@ ul {
   color: #6975f9;
   font-weight: bold;
 }
+.hamNav ul li .button {
+  background-color: transparent;
+  color: #1c1c1c;
+  border: none;
+  padding: 0;
+}
 .hamNav.openNav {
   height: 100%;
   -webkit-transform: translateX(-80vw);
@@ -496,7 +505,7 @@ ul {
 
 header {
   background-color: #d9dbf1;
-  height: max(90vh, 800px);
+  height: max(100vh, 900px);
 }
 header .wrapper {
   display: -webkit-box;

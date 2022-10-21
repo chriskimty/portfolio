@@ -44,17 +44,24 @@
 
     <!-- HAMBURGER NAV -->
     <nav class="hamNavIcon">
-        <div class="toggle"><i class="fas fa-bars"></i>
+        <div class="toggle">
+            <!-- <img src="./assets/hamburgerIcon.png" alt=""> -->
+            <i class="fas fa-bars"></i>
             <!-- CHANGE HAM ICON TO LOGO INSTEAD LATER -->
             <div class="sr-only">Mobile Navigation Toggle</div>
         </div>
     </nav>
     <nav class="hamNav">
         <ul class="hamNavLinks">
-            <li><a href="#about">about</a></li>
-            <li><a href="#skills">skills</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a href="#about" class="hamLinks">about</a></li>
+            <li><a href="#skills" class="hamLinks">skills</a></li>
+            <li><a href="#projects" class="hamLinks">projects</a></li>
+            <li><a href="#contact" class="hamLinks">contact</a></li>
+            <li>
+                <a href="./assets/resumeTemp.pdf" class="button hamLinks" target="_blank">resume <i
+                        class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </li>
         </ul>
     </nav> <!-- .hamNav ends -->
 
@@ -70,7 +77,8 @@
             </div><!-- .textContainer ends -->
             <div class="linkContainer">
                 <a href="#projects" class="button"><i class="fa-solid fa-laptop-code"></i> projects</a>
-                <a href="./assets/resumeTemp.pdf" class="button"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <a href="./assets/resumeTemp.pdf" class="button" target="_blank"><i
+                        class="fa-solid fa-arrow-up-right-from-square"></i>
                     resume</a>
             </div><!-- .linkContainer ends -->
             <div class="arrow">
@@ -291,8 +299,9 @@
                 <div class="contactForm">
                     <p>I'd love to hear from you! Please send me a message below. </p>
 
-                    <form action="#" method="#" class="myForm" name="myForm">
-                        <!-- needs revision for functionality-->
+                    <form action="https://formsubmit.co/christaeyoung.kim@gmail.com" method="POST" class="myForm"
+                        name="myForm">
+
                         <label for="name">name</label>
                         <input type="text" id="name" name="name" required>
 

@@ -4,18 +4,28 @@ const portfolio = {};
 
 // Hamburger Nav slide-out toggle
 portfolio.hamNavToggle = () => {
-    const hamNavToggle = document.querySelector(".hamNavIcon");
-    const hamNav = document.querySelector(".hamNav");
+    portfolio.hamNavToggle = document.querySelector(".hamNavIcon");
+    portfolio.hamNav = document.querySelector(".hamNav");
+    
+    portfolio.hamNavToggle.addEventListener("click", () => {
+        portfolio.hamNav.classList.toggle("openNav");
+    });
+};
 
-    hamNavToggle.addEventListener("click", () => {
-        hamNav.classList.toggle("openNav"); 
-    })
-    // need to add logic where if I click on any of the links, then the whole hamNav closes
-}
+// Remove Hamburger Nav from view once links are clicked
+portfolio.removeHamNav = () => {
+    const hamLinks = document.querySelectorAll(".hamLinks");
+
+    hamLinks.forEach(hamLinks => {
+        hamLinks.addEventListener('click', () => portfolio.hamNav.classList.remove("openNav"))
+    });
+};
+
 
 //init function
 portfolio.init = () => {
     portfolio.hamNavToggle();
+    portfolio.removeHamNav();
 }
 
 portfolio.init();
