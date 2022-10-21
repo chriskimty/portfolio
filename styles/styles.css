@@ -553,12 +553,42 @@ header .wrapper .linkContainer a {
 
 .textContainer {
   margin: 90px 0;
+  overflow: hidden;
 }
-.textContainer h2 span {
-  display: block;
+
+.typeContainer .text {
+  position: relative;
 }
-.textContainer h2 span::before {
-  content: attr(data-text);
+.typeContainer .secondText::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #d9dbf1;
+  border-left: 2.5px solid #1c1c1c;
+  -webkit-animation: animate 3s steps(12) infinite;
+          animation: animate 3s steps(12) infinite;
+}
+.typeContainer .secondText::after {
+  content: ".";
+}
+@-webkit-keyframes animate {
+  40%, 60% {
+    left: calc(100% + 10px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+@keyframes animate {
+  40%, 60% {
+    left: calc(100% + 10px);
+  }
+  100% {
+    left: 0%;
+  }
 }
 
 .catContainer {

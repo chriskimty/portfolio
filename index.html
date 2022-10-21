@@ -47,7 +47,7 @@
         <div class="toggle">
             <!-- <img src="./assets/hamburgerIcon.png" alt=""> -->
             <i class="fas fa-bars"></i>
-            <!-- CHANGE HAM ICON TO LOGO INSTEAD LATER -->
+            <!-- CHANGE HAM ICON TO LOGO INSTEAD LATER? -->
             <div class="sr-only">Mobile Navigation Toggle</div>
         </div>
     </nav>
@@ -71,9 +71,13 @@
         <div class="wrapper">
             <div class="textContainer">
                 <h1>Chris Taeyoung Kim</h1>
-                <h2>Frontend Web Developer & <span class="typewriter">Musician.</span></h2>
-                <!-- add an animated typewriter effect with CSS + JS later on  -->
-                <!-- ^what to do about accessibility here? -->
+
+                <!-- For TypeWriter effect, referenced: https://www.youtube.com/watch?v=nxoHR9lltK0 -->
+                <h2 class="typeContainer">
+                    <span class="text firstText">Frontend Web Developer &</span>
+                    <span class="text secondText"></span>
+                </h2>
+                <!-- ^do i need to add any accessibility for animations? -->
             </div><!-- .textContainer ends -->
             <div class="linkContainer">
                 <a href="#projects" class="button"><i class="fa-solid fa-laptop-code"></i> projects</a>

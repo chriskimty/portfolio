@@ -1,13 +1,12 @@
 //Create portfolio object
 const portfolio = {};
 
-
 // Hamburger Nav slide-out toggle
 portfolio.hamNavToggle = () => {
-    portfolio.hamNavToggle = document.querySelector(".hamNavIcon");
+    hamNavToggle = document.querySelector(".hamNavIcon");
     portfolio.hamNav = document.querySelector(".hamNav");
     
-    portfolio.hamNavToggle.addEventListener("click", () => {
+    hamNavToggle.addEventListener("click", () => {
         portfolio.hamNav.classList.toggle("openNav");
     });
 };
@@ -21,11 +20,30 @@ portfolio.removeHamNav = () => {
     });
 };
 
+// Typewriter Function 
+portfolio.typeWriter = () => {
+    const text = document.querySelector(".secondText");
+
+    const textLoad = () => {
+        setTimeout(() => {
+            text.textContent = "Musician"
+        }, 0);
+        setTimeout(() => {
+            text.textContent = "Educator"
+        }, 3000);
+        setTimeout(() => {
+            text.textContent = "Learner"
+        }, 6000);
+    }   
+    textLoad();
+    setInterval(textLoad, 9000);
+}
 
 //init function
 portfolio.init = () => {
     portfolio.hamNavToggle();
     portfolio.removeHamNav();
+    portfolio.typeWriter();
 }
 
 portfolio.init();

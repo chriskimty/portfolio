@@ -39,15 +39,42 @@ header {
 
 .textContainer {
   margin: 90px 0;
-  h2 {
-  span {
-      display: block;
-        &::before {
-        content: attr(data-text);
-      }
+  overflow: hidden;
+}
+
+.typeContainer {
+  .text {
+    position: relative;
+  }
+  .secondText {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $grayBlue;
+        border-left: 2.5px solid $black;
+        animation: animate 3s steps(12) infinite;
+    }
+    &::after {
+      content: "."
+    }
+  }
+  
+  @keyframes animate {
+    40%, 60% {
+      left: calc(100% + 10px);
+    }
+    100% {
+      left: 0%;
     }
   }
 }
+
+
+
 
 // temporary display: none the catcontainer
 .catContainer {
