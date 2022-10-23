@@ -5,22 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chris Kim</title>
+    <title>chrisKim</title>
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
-    <!-- LINK TO STYLESHEET -->
-    <link rel="stylesheet" href="./styles/styles.css">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600&family=Karla:wght@200;400;600&display=swap"
         rel="stylesheet">
+    <!-- LINK TO STYLESHEET -->
+    <link rel="stylesheet" href="./styles/styles.css">
     <!-- FONTAWESOME ICONS-->
     <script src="https://kit.fontawesome.com/542d40d4ae.js" crossorigin="anonymous"></script>
     <!-- DEVICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <!-- look into creating a SKIPLINK -->
 </head>
 
 <body>
@@ -60,7 +59,7 @@
             <li><a href="#projects" class="hamLinks" aria-label="go to projects section">projects</a></li>
             <li><a href="#contact" class="hamLinks" aria-label="go to contact section">contact</a></li>
             <li>
-                <a href="./assets/resumeTemp.pdf" class="button hamLinks" target="_blank"
+                <a href="./assets/resumeTemp.pdf" class="hamLinks" target="_blank"
                     aria-label="open Chris' resume in a new tab">resume <i
                         class="fa-solid fa-arrow-up-right-from-square"></i>
                 </a>
@@ -70,7 +69,7 @@
 
     <!-- HEADER -->
     <header id="header">
-        <!-- consider adding light/dark mode: https://www.youtube.com/watch?v=9LZGB3OLXNQ but also need to consider how to execute this in mobile! what/how to consider accessibility here? -->
+        <img src="./assets/nightIcon.png" alt="day/night icon" aria-hidden="true" id="icon">
         <div class="wrapper">
             <div class="textContainer">
                 <h1>Chris Taeyoung Kim</h1>
@@ -89,7 +88,6 @@
                     resume</a>
             </div><!-- .linkContainer ends -->
             <div class="arrow">
-                <!-- use JS for link to slide down with ease -->
                 <a href="">
                     <i class="fa-solid fa-chevron-down fa-2x"></i>
                 </a>
@@ -97,11 +95,8 @@
         </div> <!-- .wrapper ends -->
 
         <div class="catContainer">
-            <img class="dayCat" src="./assets/sleepingCatWhite.png" alt="cat sleeping">
-            <img class="nightCat" src="./assets/catRunningDark.gif" alt="cat running gif">
-            <!-- may need to remove some of these and just append with JS -->
+            <img class="catImg" src="./assets/sleepingCatWhite.png" alt="cat sleeping">
         </div> <!-- .catContainer ends -->
-
     </header>
 
     <!-- MAIN -->

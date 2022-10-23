@@ -23,9 +23,9 @@ a {
 }
 
 .button {
-    background-color: $black;
-    color: $white;
-    border: 2px solid $black;
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    border: 2px solid var(--secondaryColor);
     padding: 14px 36px;
     text-align: center;
     cursor: pointer;
@@ -33,15 +33,14 @@ a {
     border-radius: 0.25em;
     &:hover {
         background-color: transparent;
-        color: $black;
+        color: var(--secondaryColor);
     }
      &:focus {
         background-color: transparent;
-        color: $black;
+        color: var(--secondaryColor);
     }
 }
 
 ul {
     list-style: none;
 }
-

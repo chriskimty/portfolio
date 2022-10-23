@@ -17,6 +17,7 @@ portfolio.hamNavToggle = () => {
         hamLinks.addEventListener('click', () => portfolio.hamNav.classList.remove("openNav"))
     });
 };
+// **add functionality for Ham Nav to remove off the screen if screen gets resized?? or a media query thing? 
 
 // Typewriter Function 
 portfolio.typeWriter = () => {
@@ -83,11 +84,30 @@ portfolio.formSubmission = () => {
     form.addEventListener("submit", handleSubmit)
 };
 
+//Toggle nightmode and daymode
+portfolio.nightMode = () => {
+    const icon = document.getElementById("icon");
+    const body = document.querySelector("body");
+    const img = document.querySelector(".catImg")
+    icon.onclick = () => {
+        body.classList.toggle("nightMode");
+        console.log("🐈🐈🐈")
+        if (document.body.classList.contains("nightMode")){
+            icon.src = "assets/dayIcon.png"
+            img.src = "assets/catRunBlue.gif"
+        } else {
+            icon.src = "assets/nightIcon.png"
+            img.src = "assets/sleepingCatWhite.png"
+        }
+    }
+}
+
 //init function
 portfolio.init = () => {
     portfolio.hamNavToggle();
     portfolio.typeWriter();
     portfolio.formSubmission();
+    portfolio.nightMode();
 }
 
 portfolio.init();

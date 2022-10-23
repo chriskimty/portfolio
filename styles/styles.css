@@ -226,13 +226,29 @@ html {
   overflow: hidden;
 }
 
+:root {
+  --primaryColor: #F9FAFA;
+  --secondaryColor: #1c1c1c;
+  --tertiaryColor: #d9dbf1;
+  --transparentBlue: #d9dbf1d2;
+  --hamIconColor: #1c1c1c;
+}
+
+.nightMode {
+  --primaryColor: #1c1c1c;
+  --secondaryColor: #F9FAFA;
+  --tertiaryColor: #2C2D41;
+  --transparentBlue: #2c2d41c6;
+  --hamIconColor: #d9dbf1;
+}
+
 html {
   font-size: 125%;
 }
 
 body, button {
   font-family: "Inconsolata", monospace;
-  color: #1c1c1c;
+  color: var(--secondaryColor);
 }
 
 h1, h2, h3, h4 {
@@ -267,7 +283,7 @@ h5 {
 }
 
 a {
-  color: #1c1c1c;
+  color: var(--secondaryColor);
   font-size: 1.2rem;
 }
 
@@ -302,9 +318,9 @@ a {
 }
 
 .button {
-  background-color: #1c1c1c;
-  color: #F9FAFA;
-  border: 2px solid #1c1c1c;
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  border: 2px solid var(--secondaryColor);
   padding: 14px 36px;
   text-align: center;
   cursor: pointer;
@@ -314,11 +330,11 @@ a {
 }
 .button:hover {
   background-color: transparent;
-  color: #1c1c1c;
+  color: var(--secondaryColor);
 }
 .button:focus {
   background-color: transparent;
-  color: #1c1c1c;
+  color: var(--secondaryColor);
 }
 
 ul {
@@ -388,7 +404,7 @@ ul {
 }
 
 .headerNav {
-  background-color: rgba(217, 219, 241, 0.8235294118);
+  background-color: var(--transparentBlue);
   padding: 10px 0px;
   position: fixed;
   top: 0;
@@ -425,7 +441,7 @@ ul {
   border: 2px solid transparent;
 }
 .mainNav .mainNavLinks a:hover {
-  border: 2px solid #1c1c1c;
+  border: 2px solid var(--secondaryColor);
   font-weight: bold;
 }
 
@@ -487,6 +503,7 @@ ul {
   line-height: 85px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  color: #1c1c1c;
 }
 .hamNav ul li a:hover {
   color: #6975f9;
@@ -496,24 +513,22 @@ ul {
   color: #6975f9;
   font-weight: bold;
 }
-.hamNav ul li .button {
-  background-color: transparent;
-  color: #1c1c1c;
-  border: none;
-  padding: 0;
-}
 .hamNav.openNav {
   height: 100%;
   -webkit-transform: translateX(-80vw);
           transform: translateX(-80vw);
 }
 
+.hamNavIcon {
+  color: var(--hamIconColor);
+}
+
 .skipLink {
   position: absolute;
   left: -1000px;
-  top: 5px;
-  background-color: #1c1c1c;
-  color: #F9FAFA;
+  top: 7%;
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
   z-index: 10000;
 }
 
@@ -522,8 +537,9 @@ ul {
 }
 
 header {
-  background-color: #d9dbf1;
+  background-color: var(--tertiaryColor);
   height: max(100vh, 900px);
+  position: relative;
 }
 header .wrapper {
   display: -webkit-box;
@@ -584,8 +600,8 @@ header .wrapper .linkContainer a {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #d9dbf1;
-  border-left: 2.5px solid #1c1c1c;
+  background-color: var(--tertiaryColor);
+  border-left: 2.5px solid var(--secondaryColor);
   -webkit-animation: animate 3s steps(12) infinite;
           animation: animate 3s steps(12) infinite;
 }
@@ -609,8 +625,20 @@ header .wrapper .linkContainer a {
   }
 }
 
+#icon {
+  width: 30px;
+  cursor: pointer;
+  position: fixed;
+  left: 1%;
+  top: 1%;
+  z-index: 10000;
+}
+
 .catContainer {
-  display: none;
+  width: 220px;
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
 }
 
 .socialsNav {
@@ -644,7 +672,7 @@ header .wrapper .linkContainer a {
 
 .about {
   height: max(100vh, 900px);
-  background-color: #F9FAFA;
+  background-color: var(--primaryColor);
 }
 .about .wrapper {
   display: -webkit-box;
@@ -680,7 +708,7 @@ header .wrapper .linkContainer a {
 
 .skills {
   height: max(100vh, 900px);
-  background-color: #d9dbf1;
+  background-color: var(--tertiaryColor);
 }
 .skills h3 {
   margin-top: 0px;
@@ -705,7 +733,7 @@ header .wrapper .linkContainer a {
 }
 
 .projects {
-  background-color: #F9FAFA;
+  background-color: var(--primaryColor);
 }
 .projects h3 {
   margin-top: 0px;
@@ -745,7 +773,7 @@ header .wrapper .linkContainer a {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 50px;
-  border: 2px solid #1c1c1c;
+  border: 2px solid var(--secondaryColor);
   border-radius: 2em;
 }
 .allProjectsContainer .projectContainer .projectContentContainer .projectText {
@@ -798,7 +826,7 @@ header .wrapper .linkContainer a {
 }
 
 .contact {
-  background-color: #d9dbf1;
+  background-color: var(--tertiaryColor);
 }
 .contact h3 {
   padding-top: 80px;

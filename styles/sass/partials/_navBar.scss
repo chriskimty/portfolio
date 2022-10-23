@@ -34,7 +34,7 @@
 }
 
 .headerNav {
-    background-color: $transparentGrayBlue;
+    background-color: var(--transparentBlue);
     padding: 10px 0px;
     position: fixed;
     top: 0;
@@ -58,7 +58,7 @@
             border-radius: 0.25em;
             border: 2px solid transparent;
             &:hover {
-                border: 2px solid $black;
+                border: 2px solid var(--secondaryColor);
                 font-weight: bold;
             }
         }
@@ -89,7 +89,6 @@
 }
 
 .hamNav {
-    // display: none;
     justify-content: right;
     background-color: $white;
     height: 100vh;
@@ -110,6 +109,7 @@
                 font-size: 2.8rem;
                 line-height: 85px;
                 transition: 0.4s;
+                color: $black;
                 &:hover {
                     color: $darkBlue;
                     font-weight: bold;
@@ -119,12 +119,6 @@
                     font-weight: bold;
                 }
             }
-            .button {
-                background-color: transparent;
-                color: $black;
-                border: none;
-                padding: 0;
-            }
         }
     }
      &.openNav {
@@ -133,12 +127,16 @@
     }
 }
 
+.hamNavIcon {
+    color: var(--hamIconColor);
+}
+
 .skipLink {
   position: absolute;
   left: -1000px;
-  top: 5px;
-  background-color: $black;
-  color: $white;
+  top: 7%;
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
   z-index: 10000;
 }
 .skipLink:focus {

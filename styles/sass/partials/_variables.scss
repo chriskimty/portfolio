@@ -1,17 +1,31 @@
 //COLORS:
-$grayBlue: #d9dbf1;
-$yellow: #f1efd9;
-$black: #1c1c1c;
-$white: #F9FAFA;
 
+//dayMode colors: 
+:root {
+    --primaryColor: #F9FAFA;
+    --secondaryColor: #1c1c1c;
+    --tertiaryColor: #d9dbf1;
+    --transparentBlue: #d9dbf1d2;
+    --hamIconColor: #1c1c1c;     
+}
+
+//nightMode colors
+.nightMode {
+    --primaryColor: #1c1c1c;
+    --secondaryColor: #F9FAFA;
+    --tertiaryColor: #2C2D41;
+    --transparentBlue: #2c2d41c6;
+    --hamIconColor: #d9dbf1;
+}
+
+//Other colors (keep white and black)
+$white: #F9FAFA;
+$black:#1c1c1c;
+// $grayBlue: #d9dbf1;
 $gray: #323131;
 $lightGray: #3231314b;
-$pink: #C47AC0;
 $hotPink: #FF0096;
 $darkBlue: #6975f9;
-$transparentBlack: #1c1c1ccd;
-$transparentWhite: #f9fafac8;
-$transparentGrayBlue: #d9dbf1d2;
 
 //FONTS: 
 $bodyFont: 'Inconsolata', monospace;

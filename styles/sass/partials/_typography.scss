@@ -1,21 +1,12 @@
 @use "variables" as *;
 
-// SAMPLE TO FOLLOW:
-// LATO BOLD
-// @font-face {
-//     font-family:"Inconsolata";
-//     src: url('../fonts/Lato/Lato-Bold.ttf');
-//     font-weight: bold; 
-// }
-
-
 html {
   font-size: 125%;
 }
 
 body, button {
   font-family: $bodyFont;
-  color: $black;
+  color: var(--secondaryColor);
 }
 
 h1, h2, h3, h4 {
@@ -50,8 +41,7 @@ h5 {
 }
 
 a {
-  color: $black;
-  // font-weight: bold;
+  color: var(--secondaryColor);
   font-size: 1.2rem;
 }
 
