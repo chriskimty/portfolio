@@ -40,13 +40,20 @@
             
             p {
                 width: 55%;
+                line-height: 35px;
+
+                span {
+                    display: block;
+                    margin-top: 5%;
+                }
+
             }
             .aboutImgContainer {
                 width: 45%;
                 display: flex;
                 justify-content: center;
                 img {
-                    width: 70%;
+                    width: 80%;
                     border-radius: 50%;
                 }
             }
@@ -213,26 +220,3 @@
         background-color: $hotPink;
     }
 }
-
-// Go to top
-.return {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    position: fixed;
-    left: 2%;
-    bottom: 70px;
-    a {
-        transition: 0.3s;
-        &:hover {
-            color: $darkBlue;
-        }
-        i {
-        font-size: 2.5rem;
-        }
-    }
-    p {
-        margin: 5px;
-    }
-}
-   

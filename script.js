@@ -94,10 +94,10 @@ portfolio.nightMode = () => {
         console.log("🐈🐈🐈")
         if (document.body.classList.contains("nightMode")){
             icon.src = "assets/dayIcon.png"
-            img.src = "assets/catRunBlue.gif"
+            img.src = "assets/orangeRun.gif"
         } else {
             icon.src = "assets/nightIcon.png"
-            img.src = "assets/sleepingCatWhite.png"
+            img.src = "assets/orangeSleep.gif"
         }
     }
 }

@@ -1,6 +1,7 @@
 @use "variables" as *;
 
 footer {
+    position: relative;
     .copyright {
         background-color: $black;
         color: $white;
@@ -8,6 +9,107 @@ footer {
         text-align: center;
         p {
             margin: 0 auto;
+            font-size: 1rem;
         }
     }
 }
+
+// Go to top
+.return {
+    display: flex;
+    width: 20%;
+    position: absolute;
+    left: 1%;
+    top: -125%;
+    a {
+        transition: 0.3s;
+        text-align: center;
+        font-size: 1rem;
+        &:hover {
+            color: $darkBlue;
+        }
+        &:focus {
+            color: $darkBlue;
+        }
+        svg {
+            color: var(--secondaryColor);
+        }
+        .arrowUp {
+            margin-top: -70px;
+        }
+        i {
+        font-size: 1.3rem;
+        padding: 0;
+        }
+    }
+}
+
+.warpPlaceholder{
+            position: absolute;
+            color: transparent;
+            font-size: .1px;
+        }
+        
+        .warp {
+            display: block;
+            position: relative;
+            width: 137px;
+            height: 107px;
+            transform-box:fill-box;
+        }
+        
+        
+        .warp0 {
+            transform-origin: 5px 15px;
+            transform: translate(15.1127px,40.3506px) rotate(-1.237597rad);
+        }
+        
+        .warp1 {
+            transform-origin: 5px 15px;
+            transform: translate(17.8058px,33.6339px) rotate(-1.137231rad);
+        }
+        
+        .warp2 {
+            transform-origin: 5px 15px;
+            transform: translate(21.255px,27.253100000000003px) rotate(-1.007623rad);
+        }
+        
+        .warp3 {
+            transform-origin: 5px 15px;
+            transform: translate(25.5306px,21.5368px) rotate(-0.842745rad);
+        }
+        
+        .warp4 {
+            transform-origin: 11px 15px;
+            transform: translate(29.879399999999997px,13.920300000000001px) rotate(-0.454693rad);
+        }
+        
+        .warp5 {
+            transform-origin: 5px 15px;
+            transform: translate(47.6165px,11.029599999999999px) rotate(-0.014714rad);
+        }
+        
+        .warp6 {
+            transform-origin: 5px 15px;
+            transform: translate(54.6688px,11.704899999999999px) rotate(0.200447rad);
+        }
+        
+        .warp7 {
+            transform-origin: 11px 15px;
+            transform: translate(60.9152px,16.187px) rotate(0.517854rad);
+        }
+        
+        .warp8 {
+            transform-origin: 5px 15px;
+            transform: translate(76.2461px,23.850299999999997px) rotate(0.810779rad);
+        }
+        
+        .warp9 {
+            transform-origin: 5px 15px;
+            transform: translate(80.6181px,29.445999999999998px) rotate(1.012954rad);
+        }
+        
+        .warp10 {
+            transform-origin: 5px 15px;
+            transform: translate(83.5416px,35.9024px) rotate(1.298566rad);
+        }
