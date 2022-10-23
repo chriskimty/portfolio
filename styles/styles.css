@@ -277,6 +277,10 @@ p {
   letter-spacing: 1.6px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   max-width: 1728px;
   width: 85%;
@@ -389,6 +393,7 @@ ul {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 .mainNav {
@@ -454,7 +459,7 @@ ul {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
-  background-color: rgba(249, 250, 250, 0.7843137255);
+  background-color: #F9FAFA;
   height: 100vh;
   width: 80vw;
   position: fixed;
@@ -501,6 +506,19 @@ ul {
   height: 100%;
   -webkit-transform: translateX(-80vw);
           transform: translateX(-80vw);
+}
+
+.skipLink {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  background-color: #1c1c1c;
+  color: #F9FAFA;
+  z-index: 10000;
+}
+
+.skipLink:focus {
+  left: 0;
 }
 
 header {
@@ -665,6 +683,7 @@ header .wrapper .linkContainer a {
   background-color: #d9dbf1;
 }
 .skills h3 {
+  margin-top: 0px;
   padding-top: 80px;
 }
 
@@ -680,14 +699,6 @@ header .wrapper .linkContainer a {
   width: 25%;
   margin-bottom: 20px;
   text-align: center;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.skillsList li:hover {
-  opacity: 0.7;
-  background-image: url(../assets/checkmark.png);
-  background-repeat: no-repeat;
-  background-position: 55% 70%;
 }
 .skillsList li i {
   font-size: 4rem;
@@ -707,7 +718,7 @@ header .wrapper .linkContainer a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
 }
 .allProjectsContainer .projectContainer {
@@ -748,9 +759,6 @@ header .wrapper .linkContainer a {
           justify-content: center;
   margin-top: 10%;
 }
-.allProjectsContainer .projectContainer .projectContentContainer .projectText h4 {
-  width: 100%;
-}
 
 .projectTwo, .projectFour {
   -webkit-box-orient: horizontal;
@@ -761,6 +769,7 @@ header .wrapper .linkContainer a {
 
 .projectText h4 {
   margin: 20px 0 0 0;
+  width: 100%;
 }
 .projectText h5 {
   margin-bottom: 0px;
@@ -769,6 +778,19 @@ header .wrapper .linkContainer a {
   font-size: 1.1rem;
   line-height: 30px;
   margin: 22px 15px 5px 15px;
+  letter-spacing: 1.2px;
+}
+.projectText p a {
+  font-size: 1.1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.projectText p a:hover {
+  border-bottom: 3px solid #6975f9;
+}
+.projectText p a:focus {
+  border-bottom: 3px solid #6975f9;
 }
 
 .projectLinks {
@@ -781,10 +803,11 @@ header .wrapper .linkContainer a {
 .contact h3 {
   padding-top: 80px;
   margin-bottom: 20px;
+  margin-top: 0px;
 }
 
 .contactForm {
-  height: max(80vh, 750px);
+  height: max(100vh, 850px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -828,10 +851,22 @@ header .wrapper .linkContainer a {
       align-self: center;
   margin-top: 20px;
   margin-bottom: 60px;
+  padding: 2%;
+  width: 170px;
+}
+.contactForm .success, .contactForm .error {
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 0.2em;
+  padding: 2% 4%;
+  background-color: #6975f9;
+  color: #F9FAFA;
+}
+.contactForm .error {
+  background-color: #FF0096;
 }
 
 .return {
-  padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -840,9 +875,9 @@ header .wrapper .linkContainer a {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 20%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: fixed;
+  left: 2%;
+  bottom: 70px;
 }
 .return a {
   -webkit-transition: 0.3s;

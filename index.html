@@ -24,19 +24,21 @@
 </head>
 
 <body>
+    <!-- SKIP LINK -->
+    <a href="#projects" class="skipLink">Skip to projects</a>
     <!-- NAVIGATION BAR -->
     <nav class="headerNav">
         <div class="wrapper">
             <!--MAIN/DESKTOP NAV -->
             <div class="mainNav">
                 <div class="logo">
-                    <a href="#home">chrisKim</a>
+                    <a href="#header">chrisKim</a>
                 </div>
                 <ul class="mainNavLinks">
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#skills">skills</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a class="button" href="#contact">contact</a></li>
+                    <li><a href="#about" aria-label="go to about section">about</a></li>
+                    <li><a href="#skills" aria-label="go to skills section">skills</a></li>
+                    <li><a href="#projects" aria-label="go to projects section">projects</a></li>
+                    <li><a class="button" href="#contact" aria-label="go to contact section">contact</a></li>
                 </ul>
             </div> <!-- .mainNav ends -->
         </div> <!-- .wrapper ends -->
@@ -53,12 +55,13 @@
     </nav>
     <nav class="hamNav">
         <ul class="hamNavLinks">
-            <li><a href="#about" class="hamLinks">about</a></li>
-            <li><a href="#skills" class="hamLinks">skills</a></li>
-            <li><a href="#projects" class="hamLinks">projects</a></li>
-            <li><a href="#contact" class="hamLinks">contact</a></li>
+            <li><a href="#about" class="hamLinks" aria-label="go to about section">about</a></li>
+            <li><a href="#skills" class="hamLinks" aria-label="go to skills section">skills</a></li>
+            <li><a href="#projects" class="hamLinks" aria-label="go to projects section">projects</a></li>
+            <li><a href="#contact" class="hamLinks" aria-label="go to contact section">contact</a></li>
             <li>
-                <a href="./assets/resumeTemp.pdf" class="button hamLinks" target="_blank">resume <i
+                <a href="./assets/resumeTemp.pdf" class="button hamLinks" target="_blank"
+                    aria-label="open Chris' resume in a new tab">resume <i
                         class="fa-solid fa-arrow-up-right-from-square"></i>
                 </a>
             </li>
@@ -66,7 +69,7 @@
     </nav> <!-- .hamNav ends -->
 
     <!-- HEADER -->
-    <header>
+    <header id="header">
         <!-- consider adding light/dark mode: https://www.youtube.com/watch?v=9LZGB3OLXNQ but also need to consider how to execute this in mobile! what/how to consider accessibility here? -->
         <div class="wrapper">
             <div class="textContainer">
@@ -74,15 +77,15 @@
 
                 <!-- For TypeWriter effect, referenced: https://www.youtube.com/watch?v=nxoHR9lltK0 -->
                 <h2 class="typeContainer">
-                    <span class="text firstText">Frontend Web Developer &</span>
-                    <span class="text secondText"></span>
+                    <span class="text firstText">Frontend Web Developer &</span><span class="sr-only">Musician</span>
+                    <span class="text secondText" aria-hidden="true"></span>
                 </h2>
-                <!-- ^do i need to add any accessibility for animations? -->
             </div><!-- .textContainer ends -->
             <div class="linkContainer">
-                <a href="#projects" class="button"><i class="fa-solid fa-laptop-code"></i> projects</a>
-                <a href="./assets/resumeTemp.pdf" class="button" target="_blank"><i
-                        class="fa-solid fa-arrow-up-right-from-square"></i>
+                <a href="#projects" class="button"><i class="fa-solid fa-laptop-code"
+                        aria-label="go to project section"></i> projects</a>
+                <a href="./assets/resumeTemp.pdf" class="button" target="_blank"
+                    aria-label="open resume in a new tab"><i class="fa-solid fa-arrow-up-right-from-square"></i>
                     resume</a>
             </div><!-- .linkContainer ends -->
             <div class="arrow">
@@ -104,27 +107,26 @@
     <!-- MAIN -->
     <main>
         <!-- SOCIALS NAV -->
-        <nav class="socialsNav" aria-label="socials links">
+        <nav class="socialsNav" sr-only="socials links">
             <ul class="socials">
                 <li>
-                    <a href="https://github.com/chriskimty" target="_blank" aria-label="Chris Kim's GitHub Repo">
+                    <a href="https://github.com/chriskimty" target="_blank" sr-only="Chris Kim's GitHub Repo">
                         <i class="fa-brands fa-github fa-fw"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://linkedin.com/in/chris-ty-kim/" target="_blank"
-                        aria-label="Chris Kim's LinkedIn Page">
+                    <a href="https://linkedin.com/in/chris-ty-kim/" target="_blank" sr-only="Chris Kim's LinkedIn Page">
                         <i class="fa-brands fa-linkedin fa-fw"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="mailto:christaeyoung.kim@gmail.com" target="_blank" aria-label="Send Chris an email">
+                    <a href="mailto:christaeyoung.kim@gmail.com" target="_blank" sr-only="Send Chris an email">
                         <i class="fa-solid fa-envelope fa-fw"></i>
                     </a>
                 </li>
                 <li>
                     <a href="https://calendly.com/christaeyoung-kim/meeting" target="_blank"
-                        aria-label="Book a meeting with Chris Kim on Calendly">
+                        sr-only="Book a meeting with Chris Kim on Calendly">
                         <i class="fa-solid fa-calendar fa-fw"></i>
                     </a>
                 </li>
@@ -154,51 +156,51 @@
                 <h3>skills.</h3>
                 <ul class="skillsList">
                     <li>
-                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-html5" sr-only="html5 icon"></i>
                         <p>HTML5</p>
                     </li>
                     <li>
-                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-css3-alt" sr-only="css3 icon"></i>
                         <p>CSS3</p>
                     </li>
                     <li>
-                        <i class="fab fa-sass"></i>
+                        <i class="fab fa-sass" sr-only="sass icon"></i>
                         <p>SASS</p>
                     </li>
                     <li>
-                        <i class="fab fa-js"></i>
+                        <i class="fab fa-js" sr-only="javascript icon"></i>
                         <p>JavaScript</p>
                     </li>
                     <li>
-                        <i class="fab fa-react"></i>
+                        <i class="fab fa-react" sr-only="react icon"></i>
                         <p>React</p>
                     </li>
                     <li>
-                        <i class="fas fa-cogs"></i>
+                        <i class="fas fa-cogs" sr-only="APIs icon"></i>
                         <p>REST APIs</p>
                     </li>
                     <li>
-                        <i class="devicon-git-plain"></i>
+                        <i class="devicon-git-plain" sr-only="git icon"></i>
                         <p>Git</p>
                     </li>
                     <li>
-                        <i class="fab fa-github"></i>
+                        <i class="fab fa-github" sr-only="github icon"></i>
                         <p>GitHub</p>
                     </li>
                     <li>
-                        <i class="devicon-firebase-plain"></i>
+                        <i class="devicon-firebase-plain" sr-only="firebase icon"></i>
                         <p>Firebase</p>
                     </li>
                     <li>
-                        <i class="devicon-trello-plain"></i>
+                        <i class="devicon-trello-plain" sr-only="trello icon"></i>
                         <p>Trello</p>
                     </li>
                     <li>
-                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fas fa-mobile-alt" sr-only="responsive design icon"></i>
                         <p>Responsive Design</p>
                     </li>
                     <li>
-                        <i class="fa-solid fa-universal-access"></i>
+                        <i class="fa-solid fa-universal-access" sr-only="accessibility icon"></i>
                         <p>Accessibility</p>
                     </li>
                 </ul>
@@ -214,15 +216,19 @@
                         <div class="mockUpContainer">
                             <img src="./assets/queenQuotesMulti.png"
                                 alt="mockup of Queen Quotes app on multiple devices">
-                            <!-- needs to be revised -->
                         </div><!-- .mockUpContainer ends -->
                         <div class="projectContentContainer">
                             <div class="projectText">
                                 <h4>"Queen Quotes"</h4>
+                                <!-- Consider changing the tools to ul + li, and use ICONS instead -->
                                 <h5> JavaScript | REST APIs | SCSS | HTML</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, unde molestias quam
-                                    consequatur aperiam dolore quasi eveniet sequi sed accusantium, quos nam voluptatem
-                                    ullam quaerat?</p>
+                                <p>Are you a true RuPaul's Drag Race fan👑💋? A quiz app where squirrel
+                                    friends🐿 can
+                                    test
+                                    their knowledge about the queens' famous catchphrases. A paired
+                                    programming project with <a href="https://github.com/paulavivasteixeira"
+                                        target="_blank">Paula
+                                        Vivas</a>.</p>
                             </div><!-- .projectText ends -->
                             <div class="projectLinks">
                                 <a href="https://queenquotes.netlify.app/" class="button" target=”_blank”>live</a>
@@ -241,9 +247,10 @@
                             <div class="projectText">
                                 <h4>"Beachstays"</h4>
                                 <h5>JavaScript | SCSS | HTML</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, unde molestias quam
-                                    consequatur aperiam dolore quasi eveniet sequi sed accusantium, quos nam voluptatem
-                                    ullam quaerat?</p>
+                                <p>A multi-page PSD conversion project that adheres to style guidelines, using SCSS
+                                    partials for organization. Responsive, accessible, and functional across
+                                    multiple devices and screen
+                                    sizes.</p>
                             </div><!-- .projectText ends -->
                             <div class="projectLinks">
                                 <a href="https://welcome-to-beachstays.netlify.app/" class="button"
@@ -262,9 +269,7 @@
                             <div class="projectText">
                                 <h4>"Tasty"</h4>
                                 <h5> HTML | CSS </h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, unde molestias quam
-                                    consequatur aperiam dolore quasi eveniet sequi sed accusantium, quos nam voluptatem
-                                    ullam quaerat?</p>
+                                <p>A responsive and accessible PSD conversion created using flexbox and CSS. </p>
                             </div><!-- .projectText ends -->
                             <div class="projectLinks">
                                 <a href="https://welcometotasty.netlify.app/" class="button" target=”_blank">live</a>
@@ -281,9 +286,7 @@
                             <div class="projectText">
                                 <h4>"Fitworks"</h4>
                                 <h5> HTML | CSS </h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, unde molestias quam
-                                    consequatur aperiam dolore quasi eveniet sequi sed accusantium, quos nam voluptatem
-                                    ullam quaerat?</p>
+                                <p>A responsive and accessible PSD conversion created using flexbox and CSS.</p>
                             </div><!-- .projectText ends -->
                             <div class="projectLinks">
                                 <a href="https://fit-works.netlify.app/" class="button" target=”_blank">live</a>
@@ -302,18 +305,19 @@
 
                 <div class="contactForm">
                     <p>I'd love to hear from you! Please send me a message below. </p>
-                    <!-- keep FormSubmit for now but change if I have time -->
-                    <form action="https://formsubmit.co/christaeyoung.kim@gmail.com" method="POST" class="myForm"
-                        name="myForm">
+                    <form action="https://formspree.io/f/mvoybnwo" method="POST" class="myForm" name="myForm"
+                        id="myForm">
 
                         <label for="name">name</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" class="input" required>
 
                         <label for="email">email</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" class="input" required>
 
                         <label for="message">message</label>
                         <textarea name="message" id="message" cols="40" rows="10" required></textarea>
+
+                        <p id="myFormStatus" class="status"></p>
 
                         <button id="submitButton" type="submit" class="button">submit</button>
                     </form>
@@ -321,10 +325,9 @@
             </div><!-- .wrapper ends -->
             <!-- Return to Top -->
             <div class="return">
-                <a href="#home">
+                <a href="#header" sr-only="go back to the top">
                     <i class="fa-solid fa-circle-chevron-up"></i>
                 </a>
-                <p>back to top</p>
             </div><!-- .return ends -->
         </section>
     </main>
