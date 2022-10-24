@@ -1,5 +1,93 @@
 @use "variables" as *;
 
+@media (max-width: 1400px){
+    .allProjectsContainer {
+        width: 100%;
+        .projectContainer {
+            margin: 0px 0px 30px 0px;
+             .mockUpContainer {
+                margin: 5px;
+             } 
+             .projectContentContainer {
+                margin: 1.5%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    header {
+        height: fit-content;
+    }
+}
+
+@media (max-width: 1010px){
+    .about {
+        height: fit-content;
+        position: relative;
+        overflow-x: hidden;
+        .wrapper {
+            display: block;
+            .aboutContainer {
+                display: block;
+                p {
+                    width: 100%;
+                    margin-bottom: 10%;
+                }
+                .aboutImgContainer {
+                    display: block;
+                    position: absolute;
+                    top: 2.5%;
+                    right: -30px;
+                    width: 23%;
+                }
+            }
+        }
+    }
+
+    .skills {
+        height: fit-content;
+        .skillsList {
+            li {
+                width: 33%;
+            }
+        }
+    }
+    .allProjectsContainer {
+        width: 95%;
+        display: block;
+        .projectContainer {
+            display: block;
+            margin-bottom: 7%;
+            .mockUpContainer {
+                width: 100%;
+            }
+            .projectContentContainer {
+                width: 100%;
+                display: block;
+                .projectText {
+                    display: block;
+                    margin: 3%;
+                }
+                .projectLinks {
+                    margin: 6%;
+                }
+            }
+        }
+    }
+
+    .contact {
+        height: fit-content;
+        .contactForm {
+            height: fit-content;
+        }
+    }
+
+    .socialsNav {
+        display: none;
+    }
+}
+
 @media (max-width: 800px) {
     .headerNav {
         padding: 0px;
@@ -10,5 +98,131 @@
     .hamNavIcon {
         display: block;
     }
+    .hamNav {
+        display: block;
+    }
+    .return {
+        display: none;
+    }
+    .skills {
+        .skillsList {
+            padding: 0px;
+        }
+    }
 
+    .contactForm {
+        p {
+            width: 85%;
+        }
+        form {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        .wrapper {
+           .linkContainer {
+        margin-bottom: 10%;
+        } 
+        }
+    }
+
+     .arrow {
+        display: none;
+    }
+
+    .about .wrapper .aboutContainer .aboutImgContainer {
+                    right: -10px;
+                    width: 26%;
+                }
+   
+}
+
+@media (max-width: 500px) {
+    header {
+        height: fit-content;
+    }
+
+    .about {
+        .wrapper .aboutContainer {
+            p {
+                font-size: 1rem;
+                line-height: 27px;
+            }
+           .aboutImgContainer {
+                right: -5px;
+                width: 30%;
+            } 
+        }
+    }
+
+    .skills {
+        .skillsList {
+            li {
+                width: 50%;
+                margin: 0;
+            }
+        }
+    }
+
+    .allProjectsContainer {
+        .projectContainer {
+            text-align: left;
+            margin-bottom: 10%;
+            .projectContentContainer {
+                border: none;
+                .projectText {
+                    p {
+                        font-size: 1rem;
+                        line-height: 23px; 
+                        margin-left: 0;
+                        margin-bottom: 10%;
+                    } 
+                }
+                .projectLinks {
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    .button {
+                        margin: 2%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        .wrapper {
+            .textContainer {
+                margin-bottom: 0%;
+            }
+            .linkContainer {
+            flex-direction: column;
+            margin-top: 0;
+                a {
+                    margin: 0% 15% 2% 15%;
+                    padding-left: 5%;
+                    padding-right: 5%;
+                }
+            }
+        }
+    }
+
+    h1 {
+        font-size: clamp(3.1rem, -0.625rem + 20vw, 4.375rem);
+    }
+
+    h2 {
+        line-height: 48px;
+    }
+
+    .hamNav {
+        ul li a {
+            font-size: 1.8rem;
+        }
+    }
 }

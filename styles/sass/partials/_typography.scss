@@ -14,38 +14,44 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 5.5rem;
-  line-height: 150px;
+  font-size: clamp(3.75rem, 2.8977rem + 4.2614vw, 7.5rem);
+  margin-top: 15%;
 }
 
 h2 {
-  font-size: 2.5rem;
+  // font-size: 2.5rem;
+  font-size: clamp(1.75rem, 1.4489rem + 2.1307vw, 3rem);
   line-height: 60px;
   letter-spacing: 3.9px;
 }
 
 h3 {
-  font-size: 4rem;
+  // font-size: 4rem;
+  font-size: clamp(1.875rem, 1.0938rem + 3.9063vw, 5.3125rem);
   letter-spacing: 5px;
 }
 
 h4 {
-  font-size: 2.5rem;
+  // font-size: 2.5rem;
+  font-size: clamp(1.25rem, 0.8239rem + 2.1307vw, 3.125rem);
   line-height: 35px;
   letter-spacing: 2.5px;
 }
 
 h5 {
-  font-size: 1rem;
+  // font-size: 1rem;
+  font-size: clamp(0.9375rem, 0.8665rem + 0.3551vw, 1.25rem);
   letter-spacing: 1.6px;
 }
 
 a {
   color: var(--secondaryColor);
-  font-size: 1.2rem;
+//   font-size: 1.2rem;
+font-size: clamp(1rem, 0.858rem + 0.7102vw, 1.625rem);
 }
 
 p {
   font-size: 1.2rem;
+  // font-size: clamp(1rem, 0.8722rem + 0.6392vw, 1.5625rem);
   line-height: 40px;
 }

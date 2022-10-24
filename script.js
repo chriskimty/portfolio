@@ -17,7 +17,6 @@ portfolio.hamNavToggle = () => {
         hamLinks.addEventListener('click', () => portfolio.hamNav.classList.remove("openNav"))
     });
 };
-// **add functionality for Ham Nav to remove off the screen if screen gets resized?? or a media query thing? 
 
 // Typewriter Function 
 portfolio.typeWriter = () => {
@@ -37,11 +36,11 @@ portfolio.typeWriter = () => {
             text.textContent = "Learner"
         }, 9000);
         setTimeout(() => {
-            text.textContent = "Cat Mom"
+            text.textContent = "Cat-Mom"
         }, 12000);
     }
     textAnimation();
-    setInterval(textAnimation, 15001);
+    setInterval(textAnimation, 15000);
     // changed from 15000, but technically, not sure why the logic is flawed since the entire function re-runs every 15 seconds... 
 };
 

@@ -1,6 +1,6 @@
 //COLORS:
 
-//dayMode colors: 
+// CSS variables to set colors for Day Mode functionality:
 :root {
     --primaryColor: #F9FAFA;
     --secondaryColor: #1c1c1c;
@@ -9,7 +9,7 @@
     --hamIconColor: #1c1c1c;     
 }
 
-//nightMode colors
+// CSS variables to set colors for Night Mode functionality:
 .nightMode {
     --primaryColor: #1c1c1c;
     --secondaryColor: #F9FAFA;
@@ -18,10 +18,9 @@
     --hamIconColor: #d9dbf1;
 }
 
-//Other colors (keep white and black)
+//SASS color variables for colors outside of Day/Night ode funcationality
 $white: #F9FAFA;
 $black:#1c1c1c;
-// $grayBlue: #d9dbf1;
 $gray: #323131;
 $lightGray: #3231314b;
 $hotPink: #FF0096;
