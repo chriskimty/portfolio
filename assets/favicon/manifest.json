@@ -1,6 +1,6 @@
 {
     "name": "",
-    "short_name": "",
+    "short_name": "Chris Kim's Portfolio",
     "icons": [
         {
             "src": "/favicon.png",
@@ -8,7 +8,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#6975f9",
-    "background_color": "#6975f9",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
     "display": "standalone"
 }
