@@ -1,10 +1,16 @@
 {
-    "name": "",
+    "name": "Chris Taeyoung Kim's Web Dev Portfolio",
     "short_name": "Chris Kim's Portfolio",
     "icons": [
         {
-            "src": "/favicon.png",
-            "sizes": "328x328",
+            "src": "/androidChrome192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+
+            "src": "/androidChrome512x512.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],

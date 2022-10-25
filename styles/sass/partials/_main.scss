@@ -85,7 +85,7 @@
 
 // Section: Projects
 .projects {
-    // does height need to be declared here?
+    overflow: hidden;
     background-color: var(--primaryColor);
     h3 {
         margin-top: 0px;
@@ -106,6 +106,9 @@
         .mockUpContainer {
             width: 50%;
             margin: 50px;
+            img {
+                width: 100%;
+            }
         }
         .projectContentContainer {
             width: 50%;
@@ -166,6 +169,9 @@
         padding-top: 80px;
         margin-bottom: 20px;
         margin-top: 0px;
+    }
+    .contactSocialsNav {
+        display: none;
     }
 }
 
