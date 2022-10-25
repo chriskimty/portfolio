@@ -90,7 +90,6 @@ portfolio.nightMode = () => {
     const img = document.querySelector(".catImg")
     icon.onclick = () => {
         body.classList.toggle("nightMode");
-        console.log("🐈🐈🐈")
         if (document.body.classList.contains("nightMode")){
             icon.src = "assets/dayIcon.png"
             img.src = "assets/orangeRun.gif"
