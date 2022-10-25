@@ -1324,6 +1324,9 @@ footer .copyright p {
   .hamNav ul li a {
     font-size: 1.8rem;
   }
+  .mobileSocialsNav {
+    margin-top: 0%;
+  }
   .contact .contactSocialsNav {
     top: 15%;
   }
