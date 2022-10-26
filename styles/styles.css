@@ -1078,6 +1078,11 @@ footer .copyright p {
     margin-bottom: 2%;
   }
 }
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 1328px) {
+  .chrome {
+    white-space: pre;
+  }
+}
 @media (max-width: 1200px) {
   header {
     height: -webkit-fit-content;

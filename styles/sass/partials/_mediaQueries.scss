@@ -28,6 +28,13 @@
     }
 }
 
+// to fix typewriter issue on Chrome Browser only
+@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 1328px){ 
+    .chrome {
+        white-space: pre;
+    }
+}
+
 @media (max-width: 1200px){
     header {
         height: fit-content;
