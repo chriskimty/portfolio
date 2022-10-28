@@ -12,7 +12,7 @@
 * Fonts from [Google Fonts](https://fonts.google.com/)
 
 
-Contact Information:
+## Contact Information
 * [Github](https://github.com/chriskimty)
 * [Twitter @chabMom](https://twitter.com/chabMom)
 * [LinkedIn](https://www.linkedin.com/in/chris-ty-kim/)
