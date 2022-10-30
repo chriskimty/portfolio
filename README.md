@@ -1,4 +1,4 @@
-## Portfolio Project
+<h1>Portfolio Project </h1>
 
 <p>This is my portfolio project completed in October 2022 with <a href="https://junocollege.com">Juno College's</a> Web Development Bootcamp ✨ Cohort 44 ✨, created with semantic HTML, SCSS, and good ol' vanilla JS!</p>
 <p>Please check out my live portfolio site at  <a href="https://chriskim.dev">chriskim.dev</a>.</p>
