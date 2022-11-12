@@ -32,22 +32,19 @@ h3 {
 }
 
 h4 {
-  // font-size: 2.5rem;
   font-size: clamp(1.25rem, 0.8239rem + 2.1307vw, 3.125rem);
   line-height: 35px;
   letter-spacing: 2.5px;
 }
 
 h5 {
-  // font-size: 1rem;
   font-size: clamp(0.9375rem, 0.8665rem + 0.3551vw, 1.25rem);
   letter-spacing: 1.6px;
 }
 
 a {
   color: var(--secondaryColor);
-//   font-size: 1.2rem;
-font-size: clamp(1rem, 0.858rem + 0.7102vw, 1.625rem);
+  font-size: clamp(1rem, 0.858rem + 0.7102vw, 1.625rem);
 }
 
 p {

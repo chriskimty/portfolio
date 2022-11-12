@@ -10,6 +10,16 @@ footer {
         p {
             margin: 0 auto;
             font-size: 1rem;
+            a {
+                color: $white;
+                font-size: 1rem;
+                &:hover {
+                    color: $darkBlue;
+                }
+                &:focus {
+                    color: $darkBlue;
+                }
+            }
         }
     }
 }

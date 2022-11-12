@@ -929,6 +929,16 @@ footer .copyright p {
   margin: 0 auto;
   font-size: 1rem;
 }
+footer .copyright p a {
+  color: #F9FAFA;
+  font-size: 1rem;
+}
+footer .copyright p a:hover {
+  color: #6975f9;
+}
+footer .copyright p a:focus {
+  color: #6975f9;
+}
 
 .return {
   display: -webkit-box;
